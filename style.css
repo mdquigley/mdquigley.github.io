@@ -20,11 +20,11 @@ footer {
   font-size: 12px;
 }
 
-td {
+/*td {
   padding-left: 8px;
   padding-right: 8px;
-  text-align: center;
-}
+  justify-content
+}*/
 
 #about {
   margin-top: 60px;
@@ -39,5 +39,10 @@ td {
 }
 
 #site-title {
-	font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+
+#discog {
+  margin-top: 60px;
+  font-family: inherit;
 }
