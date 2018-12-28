@@ -21,7 +21,15 @@ footer {
 }
 
 #about {
-    margin-top: 60px;
+  margin-top: 60px;
+}
+
+#about-img {
+  
+}
+
+#about-text {
+  padding: 50px;
 }
 
 #site-title {
