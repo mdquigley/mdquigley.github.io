@@ -1,0 +1,29 @@
+body {
+  font-family: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+header {
+  margin-top: 20px;
+}
+a {
+  color: #b57281;
+}
+
+footer {
+  font-size: 12px;
+}
+
+#about {
+    margin-top: 60px;
+}
+
+#site-title {
+	font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
+}
