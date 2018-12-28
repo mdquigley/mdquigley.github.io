@@ -26,6 +26,10 @@ footer {
   justify-content
 }*/
 
+.card {
+  margin-top: 25px;
+}
+
 #about {
   margin-top: 60px;
 }
