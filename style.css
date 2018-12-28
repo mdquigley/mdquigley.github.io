@@ -20,12 +20,18 @@ footer {
   font-size: 12px;
 }
 
+td {
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
 #about {
   margin-top: 60px;
 }
 
 #about-img {
-  
+
 }
 
 #about-text {
