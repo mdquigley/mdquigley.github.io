@@ -1,5 +1,6 @@
 body {
-  font-family: inherit;
+  /* font-family: inherit; */
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 h1 {
@@ -15,9 +16,10 @@ h1 a:hover {
   color: #b57281;
 }
 
-p {
+/* p {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-}
+} */
+
 header {
   margin-top: 20px;
 }
@@ -58,4 +60,8 @@ footer {
 #discog {
   margin-top: 60px;
   font-family: inherit;
+}
+
+#portfolio {
+  font-family: Arial, sans-serif;
 }
