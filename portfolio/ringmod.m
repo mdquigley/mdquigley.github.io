@@ -1,6 +1,4 @@
 %       Name: Michael Quigley
-% Student ID: N12158006
-%      NetID: mdq204
 %
 %   Fall 2011
 %   FUND. DST
@@ -9,22 +7,22 @@
 % FINAL PROJECT - Ring Modulator & STFT
 %
 % Example of how to run function with supplied audio file 'poem.wav' :
-% 
+%
 %       ringmod('poem', 30, 9, 100, 10, 'hamming', 'ringPoem')
-% 
+%
 %--------------------------------------------------------------------------
 %
 % Help:
-% 
+%
 % ringmod(signal, fCarrier, aCarrier, winLength, overLapLength, winType, OUTfile)
-%   
+%
 %   ringmod takes in variables for a modulator signal, carrier frequency
 %   and amplitude, window length, overlap length, window type, and output
 %   filename. It "ring modulates" the modulator signal and carrier
-%   sine wave, performs a Short-Time Fourier Transform, and outputs the 
+%   sine wave, performs a Short-Time Fourier Transform, and outputs the
 %   resultant audio to a .WAV file, graphs the frequency and amplitude
-%   data, and sounds the output audio. 
-% 
+%   data, and sounds the output audio.
+%
 % Inputs:
 %   signal - filename of input .WAV modulator
 %   fCarrier - frequency of carrier sine wave (in Hertz)
@@ -40,7 +38,7 @@
 %   OUTfile - filename of output .WAV file to be written
 %
 % Output:
-%   1) A .WAV file of the ring modulated audio, of filename designated by 
+%   1) A .WAV file of the ring modulated audio, of filename designated by
 %   OUTfile. 2) Audio playback of the result. 3)A graph of the frequency
 %   content vs. amplitude content of the result.
 %
@@ -110,19 +108,19 @@ outputPad = [output; zeros(winLength, 1)]; % zero pad end of output
 switch winType
     case 'rect'
         window = rectwin(winLength);
-        
+
     case 'hamming'
         window = hamming(winLength);
-        
+
     case 'hann'
         window = hann(winLength);
-        
+
     case 'blackman'
         window = blackman(winLength);
-        
+
     case 'bartlett'
         window = bartlett(winLength);
-        
+
     otherwise
         error('winType must be one of the following: rect, hamming, hann, blackman, bartlett.')
 end
@@ -135,16 +133,16 @@ column = 1; % initialize column start point
 
 
 for k = 1:hopSize:nSamps
-    
+
     % applies window to output section
     X = fft(window .* outputPad(k : k + winLength - 1));
-        
+
     % fills fft data into bin
     y(:, column) = X(1:halfWindow);
-    
+
     % moves to next bin
     column = column + 1;
-    
+
 end
 
 % calc normalized magnitudes of fft data
