@@ -6,4 +6,3 @@ It requires the following externals from [cv.jit](https://github.com/Cycling74/c
 * cv.jit.cartopol.maxpat
 * cv.jit.changetype.maxpat
 * cv.jit.flow.draw.maxpat
-* urn-jb.maxpat
