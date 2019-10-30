@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="img/site_icon.jpg">
+
+
+  <title>Mike Quigley</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 id="site-title" class="col-sm-4"><a href="index.html">MIKE QUIGLEY</a></h1>
+      <nav class="col-sm-8 text-right">
+        <p><a href="about.html">About</a> | <a href="album-art.html">Album Art</a> | <a
+            href="discog.html">Discography</a> | <a href="misc.html">Misc.</a> | <a href="posters.html">Technology</a> |
+          <a href="technology.html">Posters</a></p>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container" id="portfolio">
+    <div class="col-md-12">
+      <p>A selection of music technology projects.</p>
+    </div>
+    <div class="album py-5 bg-light">
+      <div class="row">
+        <!-- Mirror Music -->
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <p class="text-center"><strong>Mirror Music</strong></p>
+            <div class="row justify-content-md-center">
+              <figure class="col-md-8">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/hMbm4svvM6w?controls=1"></iframe>
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-md-12" class="card-body">
+                <p class="card-text"><strong>Summary: </strong>An interactive synthesizer that generates random pitches
+                  within a user specified key, triggered by motion, and characterized in range and timbre by color.</p>
+                <p class="card-text"><strong>Explanation: </strong>Final project for Advanced Max/MSP/Jitter Programming
+                  with Professor Dafna Naphtali. Video input is split into a grid of 16 squares, or "pixels". Each pixel
+                  is analyzed for motion
+                  and color data. When motion in a pixel is detected, the color data at that moment is
+                  sent to 1 of 16 poly~ instances that generates a random pitch within the specified key, played for the
+                  specified length with attack, decay, sustain, and release. The level of green in the pixel is used to
+                  control the blend of
+                  sinewave and trianglewave generators. A predeominance of blue causes the randomly chosen pitch to be
+                  lowered an octave below the tonic, and a predominance of red causes the randomly chosen pitch to be
+                  raised an octave above the
+                  tonic. Controls for brightness, contrast, and saturation allow the user to manipulate the color data
+                  of each pixel before analyzation. Motion threshold allows the user to determine what level of motion
+                  triggers a note. With
+                  retrigger off, notes/pixels will not be retriggered until the entire notelength has passed. With
+                  retrigger on a pixel can continuously be triggered by generating new amplitude envelopes before the
+                  previous one finishes.</p>
+                <p class="card-text">Source code is available on <a
+                    href="https://github.com/mdquigley/mdquigley.github.io/tree/master/portfolio/mirror-music_src"
+                    target="_blank">GitHub</a></p>
+                <div class="row justify-content-md-center">
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/mirror-music_src/screenshots/MirrorMusic02.png"
+                    width="550" height="400" />
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/mirror-music_src/screenshots/MirrorMusic03.png"
+                    width="550" height="400" />
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/mirror-music_src/screenshots/MirrorMusic04.png"
+                    width="550" height="400" />
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/mirror-music_src/screenshots/MirrorMusic05.png"
+                    width="550" height="400" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FUNCH -->
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <p class="text-center"><strong>FUNCH</strong></p>
+            <div class="row justify-content-md-center">
+              <figure class="col-md-8">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/AAhl8O_wNek?controls=1"></iframe>
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-md-12" class="card-body">
+                <p class="card-text"><strong>Summary: </strong>Final project for Computer Music Synthesis with Professor
+                  Peter McCulloch.</p>
+                <p class="card-text"><strong>Explanation: </strong>A max patch capable of processing both live audio and
+                  sound files. It consists of four main sections, each dedicated to the predominant max object in that
+                  portion of the patch. The user can manipulate various parameters affecting sample and bit rates, ring
+                  modulation, delay and resonance. Each unit output can be mixed independently and a recording of the
+                  master output can be made. The patch is intended as a performance application with opportunities for
+                  collaboration between patch operator and live performer or prerecorded sound sources.</p>
+                <p class="card-text">Source code is available on <a
+                    href="https://github.com/mdquigley/mdquigley.github.io/tree/master/portfolio/funch_src"
+                    target="_blank">GitHub</a></p>
+                <div class="row justify-content-md-center">
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/funch_src/screenshots/funch-01.jpg"
+                    width="550" height="400" />
+                  <img
+                    src="https://raw.githubusercontent.com/mdquigley/mdquigley.github.io/master/portfolio/funch_src/screenshots/funch-02.jpg"
+                    width="550" height="400" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Psychology of Music -->
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="row">
+              <div class="card-body text-center">
+                <p><strong>Visual Feedback In A Laptop Instrument</strong></p>
+                <p class="card-text"><strong>Summary: </strong>Final project for Psychology of Music with Professor Mary
+                  Farbood. This experiment tested the hypothesis that, in a video camera controlled software instrument,
+                  the presentation of
+                  visual feedback will aid in the user's understanding of musical mappings to visual space. The "visual
+                  feedback" was based off of a system similar to that used in "Mirror Music" and the completed project
+                  acted as the preliminary
+                  research stage of my former masters thesis.</p>
+                <p class="card-text">Source code is available on <a
+                    href="https://github.com/mdquigley/mdquigley.github.io/tree/master/portfolio/psych_src"
+                    target="_blank">GitHub</a></p>
+                <figure class="col-sm-12">
+                  <object width="100%" height="800" data="portfolio/psych_src/PsychologyOfMusic.pdf"></object>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Java Music Systems -->
+        <div class="col-md-12">
+          <div class="card mb-12">
+            <div class="card-body">
+              <p class="text-center"><strong>Zone Out</strong></p>
+              <p class="card-text"><strong>Summary: </strong>Final project for Java Music Systems with Professor Nick
+                Didkovsky, Zone Out is a java program that creates generative ambient music for three voices, written
+                with JMSL
+                and JSyn. Below is an excerpt recording. It was originally hosted as a java applet on a personal
+                website. I plan to recreate and expand on this idea with Javascript using Tone.js as a personal project
+                sometime soon.<p class="card-text">Final paper and
+                  source code are available on <a
+                    href="https://github.com/mdquigley/mdquigley.github.io/tree/master/portfolio/java_src"
+                    target="_blank">GitHub.</a></p>
+
+                <figure>
+                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92987854&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </figure>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-12 text-center">&copy; Mike Quigley 2019</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
