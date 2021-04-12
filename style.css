@@ -69,7 +69,9 @@ footer {
   padding-top: .25em;
   height: 320px;
   box-shadow: 5px 10px 9px rgb(0,0,0,0.2);
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 } 
 
 #portfolio .mirror-music {
@@ -83,14 +85,31 @@ footer {
 
 #portfolio .album a:hover .card {
   box-shadow: 5px 10px 9px #b57281;
-  color: #555555
+  color: #555555;
 }
 
-#portfolio .washerfacts {
-  padding-top: 2em;
+#portfolio .card-body h5 {
+  transition: 300ms transform ease;
 }
 
-/* this might affect things other than portfolio and /technology */
+#portfolio .card-body p{
+  opacity: 0;
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+#portfolio .album .card:hover h5,
+#portfolio .album .card:hover p {
+  opacity: 1;
+  transition-delay: 100ms;
+  transform: none;
+}
+
+#portfolio .album .card:hover p {
+  opacity: 1;
+  transition-delay: 100ms;
+  transform: translateY(-50%);
+}
+
 .technology h2 {
   text-align: center;
   margin-top: 2em;
@@ -112,7 +131,6 @@ footer {
   #about-text {
     padding: 50px 0 0 0;
     margin: 0;
-    ;
   }
 
 }
