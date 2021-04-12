@@ -36,45 +36,43 @@
       <!-- Mirror Music -->
       <div class="col-md-12">
         <h2>Mirror Music</h2>
-        <div class="card mb-12">
-          <div class="row justify-content-md-center">
-            <figure class="col-md-8">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/hMbm4svvM6w?controls=1"></iframe>
-            </figure>
-          </div>
-          <div class="row">
-            <div class="col-md-12" class="card-body">
-              <p class="card-text"><strong>Summary: </strong>An interactive synthesizer that generates random pitches
-                within a user specified key, triggered by motion, and characterized in range and timbre by color.</p>
-              <p class="card-text"><strong>Tags: </strong>Max/MSP, Jitter, Computer Vision, Synthesis</p>
-              <p class="card-text"><strong>Explanation: </strong>Final project for Advanced Max/MSP/Jitter Programming
-                with Professor Dafna Naphtali. Video input is split into a grid of 16 squares, or "pixels". Each pixel
-                is analyzed for motion
-                and color data. When motion in a pixel is detected, the color data at that moment is
-                sent to 1 of 16 poly~ instances that generates a random pitch within the specified key, played for the
-                specified length with attack, decay, sustain, and release. The level of green in the pixel is used to
-                control the blend of
-                sinewave and trianglewave generators. A predeominance of blue causes the randomly chosen pitch to be
-                lowered an octave below the tonic, and a predominance of red causes the randomly chosen pitch to be
-                raised an octave above the
-                tonic. Controls for brightness, contrast, and saturation allow the user to manipulate the color data
-                of each pixel before analyzation. Motion threshold allows the user to determine what level of motion
-                triggers a note. With
-                retrigger off, notes/pixels will not be retriggered until the entire notelength has passed. With
-                retrigger on a pixel can continuously be triggered by generating new amplitude envelopes before the
-                previous one finishes.</p>
-              <p class="card-text">Source code is available on <a href="https://github.com/mdquigley/mirror-music"
-                  target="_blank">GitHub</a></p>
-              <div class="row justify-content-md-center">
-                <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic02.png"
-                  width="550" height="400" />
-                <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic03.png"
-                  width="550" height="400" />
-                <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic04.png"
-                  width="550" height="400" />
-                <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic05.png"
-                  width="550" height="400" />
-              </div>
+        <div class="row justify-content-md-center">
+          <figure class="col-md-8">
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/hMbm4svvM6w?controls=1"></iframe>
+          </figure>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p><strong>Summary: </strong>An interactive synthesizer that generates random pitches
+              within a user specified key, triggered by motion, and characterized in range and timbre by color.</p>
+            <p><strong>Tags: </strong>Max/MSP, Jitter, Computer Vision, Synthesis</p>
+            <p><strong>Explanation: </strong>Final project for Advanced Max/MSP/Jitter Programming
+              with Professor Dafna Naphtali. Video input is split into a grid of 16 squares, or "pixels". Each pixel
+              is analyzed for motion
+              and color data. When motion in a pixel is detected, the color data at that moment is
+              sent to 1 of 16 poly~ instances that generates a random pitch within the specified key, played for the
+              specified length with attack, decay, sustain, and release. The level of green in the pixel is used to
+              control the blend of
+              sinewave and trianglewave generators. A predeominance of blue causes the randomly chosen pitch to be
+              lowered an octave below the tonic, and a predominance of red causes the randomly chosen pitch to be
+              raised an octave above the
+              tonic. Controls for brightness, contrast, and saturation allow the user to manipulate the color data
+              of each pixel before analyzation. Motion threshold allows the user to determine what level of motion
+              triggers a note. With
+              retrigger off, notes/pixels will not be retriggered until the entire notelength has passed. With
+              retrigger on a pixel can continuously be triggered by generating new amplitude envelopes before the
+              previous one finishes.</p>
+            <p>Source code is available on <a href="https://github.com/mdquigley/mirror-music"
+                target="_blank">GitHub</a></p>
+            <div class="row justify-content-md-center">
+              <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic02.png" width="550"
+                height="400" />
+              <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic03.png" width="550"
+                height="400" />
+              <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic04.png" width="550"
+                height="400" />
+              <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic05.png" width="550"
+                height="400" />
             </div>
           </div>
         </div>
