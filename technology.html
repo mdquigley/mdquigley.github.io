@@ -24,170 +24,108 @@
       <nav class="col-sm-8 text-right">
         <p><a href="about.html">About</a> | <a href="album-art.html">Album Art</a> | <a
             href="discog.html">Discography</a> | <a href="misc.html">Misc.</a> | <a href="posters.html">Posters</a> |
-          <a href="technology.html">Technology</a></p>
+          <a href="technology.html">Technology</a>
+        </p>
       </nav>
     </div>
   </header>
 
-  <section class="container" id="portfolio">
+  <section class="container technology" id="portfolio">
     <div class="col-md-12">
-      <p>A selection of music technology projects.</p>
+      <p>A selection of development and design projects</p>
     </div>
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
       <div class="row">
         <!-- Toneblocks -->
-        <div class="col-md-12">
-          <div class="card mb-12">
-            <p class="text-center"><strong>Toneblocks</strong></p>
-            <div class="row justify-content-md-center">
-              <figure class="col-md-12">
-                <img width="100%" height="100%" src="img/toneblocks.png"></img>
-              </figure>
-            </div>
-            <div class="row">
-              <div class="col-md-12" class="card-body">
-                <p class="card-text"><strong>Summary: </strong>Masters thesis project developed under the study of Dr. Morwaread Farbood.</p>
-                <p class="card-text"><strong>Explanation: </strong>Toneblocks is a block-based visual programming environment for creating 
-                  music with code. The development, documentation, and evaluation of the project served as my masters thesis at NYU Steinhardt.
-                
-                  In examining the strengths and weaknesses of music making and computer programming educational tools, and the relatively 
-                  empty space between them, I sought to generate a tool that is both intuitive and interesting for novice users 
-                  with interests in computer programming and music. In designing such a tool, user-centered design principles were employed 
-                  in an effort to lower barriers of entry while increasing the level at which advanced users became inhibited or uninterested. 
-                  Influenced by educational theory as well as design theory, the web application integrates block-based visual programming 
-                  with music making activities. An ongoing design-based research approach allowed for continual assessment with an industry 
-                  expert and subsequent improvement to further address user-centered design principles. Observational usability testing 
-                  sessions showed the application to be easy to use, as well as interesting in its musical affordances. Limitations revealed 
-                  in assessment offer potential future improvements and additions.
-                </p>
-                <p class="card-text">The tool is in ongoing development, a live demo is available for use at <a href="https://quig.info/toneblocks"
-                  target="_blank">Toneblocks</a></p>
-                <p class="card-text">Source code is available on <a href="https://github.com/mdquigley/toneblocks"
-                  target="_blank">GitHub</a></p>
+        <div class="col-md-4">
+          <a href="technology/toneblocks.html" target="_blank">
+            <div class="card mb-12 text-center">
+              <div class="row justify-content-md-center">
+                <img width="55%" src="img/tb.png" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p class="card-text"><strong>Toneblocks: </strong>a musical creative coding environment</p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <!-- Mirror Music -->
-        <div class="col-md-12">
-          <div class="card mb-12">
-            <p class="text-center"><strong>Mirror Music</strong></p>
-            <div class="row justify-content-md-center">
-              <figure class="col-md-8">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/hMbm4svvM6w?controls=1"></iframe>
-              </figure>
-            </div>
-            <div class="row">
-              <div class="col-md-12" class="card-body">
-                <p class="card-text"><strong>Summary: </strong>An interactive synthesizer that generates random pitches
-                  within a user specified key, triggered by motion, and characterized in range and timbre by color.</p>
-                <p class="card-text"><strong>Explanation: </strong>Final project for Advanced Max/MSP/Jitter Programming
-                  with Professor Dafna Naphtali. Video input is split into a grid of 16 squares, or "pixels". Each pixel
-                  is analyzed for motion
-                  and color data. When motion in a pixel is detected, the color data at that moment is
-                  sent to 1 of 16 poly~ instances that generates a random pitch within the specified key, played for the
-                  specified length with attack, decay, sustain, and release. The level of green in the pixel is used to
-                  control the blend of
-                  sinewave and trianglewave generators. A predeominance of blue causes the randomly chosen pitch to be
-                  lowered an octave below the tonic, and a predominance of red causes the randomly chosen pitch to be
-                  raised an octave above the
-                  tonic. Controls for brightness, contrast, and saturation allow the user to manipulate the color data
-                  of each pixel before analyzation. Motion threshold allows the user to determine what level of motion
-                  triggers a note. With
-                  retrigger off, notes/pixels will not be retriggered until the entire notelength has passed. With
-                  retrigger on a pixel can continuously be triggered by generating new amplitude envelopes before the
-                  previous one finishes.</p>
-                <p class="card-text">Source code is available on <a href="https://github.com/mdquigley/mirror-music"
-                    target="_blank">GitHub</a></p>
-                <div class="row justify-content-md-center">
-                  <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic02.png"
-                    width="550" height="400" />
-                  <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic03.png"
-                    width="550" height="400" />
-                  <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic04.png"
-                    width="550" height="400" />
-                  <img src="https://github.com/mdquigley/mirror-music/raw/master/screenshots/MirrorMusic05.png"
-                    width="550" height="400" />
+        <div class="col-md-4">
+          <a href="technology/mirror-music.html" target="_blank">
+            <div class="card mb-12 text-center">
+              <div class="row justify-content-md-center">
+                <img class="mirror-music" src="../img/mirror-music.png" width="80%" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p class="card-text"><strong>Mirror Music: </strong>an interactive camera-based synthesizer</p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <!-- FUNCH -->
-        <div class="col-md-12">
-          <div class="card mb-12">
-            <p class="text-center"><strong>FUNCH</strong></p>
-            <div class="row justify-content-md-center">
-              <figure class="col-md-8">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/AAhl8O_wNek?controls=1"></iframe>
-              </figure>
-            </div>
-            <div class="row">
-              <div class="col-md-12" class="card-body">
-                <p class="card-text"><strong>Summary: </strong>Final project for Computer Music Synthesis with Professor
-                  Peter McCulloch.</p>
-                <p class="card-text"><strong>Explanation: </strong>A max patch capable of processing both live audio and
-                  sound files. It consists of four main sections, each dedicated to the predominant max object in that
-                  portion of the patch. The user can manipulate various parameters affecting sample and bit rates, ring
-                  modulation, delay and resonance. Each unit output can be mixed independently and a recording of the
-                  master output can be made. The patch is intended as a performance application with opportunities for
-                  collaboration between patch operator and live performer or prerecorded sound sources.</p>
-                <p class="card-text">Source code is available on <a href="https://github.com/mdquigley/funch"
-                    target="_blank">GitHub</a></p>
-                <div class="row justify-content-md-center">
-                  <img src="https://github.com/mdquigley/funch/raw/master/screenshots/funch-01.png" width="500"
-                    height="500" />
-                  <img src="https://github.com/mdquigley/funch/raw/master/screenshots/funch-02.png" width="500"
-                    height="500" />
+        <div class="col-md-4">
+          <a href="technology/funch.html" target="_blank">
+            <div class="card mb-12 text-center">
+              <div class="row justify-content-md-center">
+                <img src="https://github.com/mdquigley/funch/raw/master/screenshots/funch-01.png" width="65%" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p class="card-text"><strong>FUNCH: </strong>Max/MSP based audio effects processing for live
+                    performance</p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Psychology of Music -->
-        <div class="col-md-12">
-          <div class="card mb-12">
-            <div class="row">
-              <div class="card-body text-center">
-                <p><strong>Visual Feedback In A Laptop Instrument</strong></p>
-                <p class="card-text"><strong>Summary: </strong>Final project for Psychology of Music with Professor Mary
-                  Farbood. This experiment tested the hypothesis that, in a video camera controlled software instrument,
-                  the presentation of
-                  visual feedback will aid in the user's understanding of musical mappings to visual space. The "visual
-                  feedback" was based off of a system similar to that used in "Mirror Music" and the completed project
-                  acted as the preliminary
-                  research stage of my former masters thesis.</p>
-                <p class="card-text">Source code is available on <a href="https://github.com/mdquigley/visual-feedback"
-                    target="_blank">GitHub</a></p>
-                <figure class="col-sm-12">
-                  <!-- <embed src="portfolio/psych_src/PsychologyOfMusic.pdf" width="100%" height="800">  -->
-                  <object width="100%" height="800" data="img/PsychologyOfMusic.pdf"></object>
-                </figure>
+        <!-- Visual Feedback -->
+        <div class="col-md-4">
+          <a href="technology/visual-feedback.html" target="_blank">
+            <div class="card mb-12 text-center">
+              <div class="row justify-content-md-center">
+                <img src="../img/visual-feedback.png" width="70%" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p><strong>Visual Feedback In A Laptop Instrument</strong></p>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Java Music Systems -->
-        <div class="col-md-12">
-          <div class="card mb-12">
-            <div class="card-body">
-              <p class="text-center"><strong>Zone Out</strong></p>
-              <p class="card-text"><strong>Summary: </strong>Final project for Java Music Systems with Professor Nick
-                Didkovsky, Zone Out is a java program that creates generative ambient music for three voices, written
-                with JMSL
-                and JSyn. Below is an excerpt recording. It was originally hosted as a java applet on a personal
-                website. I plan to recreate and expand on this idea with Javascript using Tone.js as a personal project
-                sometime soon.
-              <p class="card-text">Final paper and
-                source code are available on <a href="https://github.com/mdquigley/zone-out" target="_blank">GitHub.</a>
-              </p>
-
-              <figure>
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/92987854&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-              </figure>
+        <!-- Zone Out -->
+        <div class="col-md-4">
+          <a href="technology/zone-out.html" target="_blank">
+            <div class="card mb-12 text-center">
+              <div class="row justify-content-md-center">
+                <img src="../img/zone-out.png" width="70%" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p><strong>Zone Out: </strong> generative ambient music written with JMSL and JSyn</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <!-- washerfacts.com -->
+        <div class="col-md-4">
+          <a href="https://washerfacts.com" target="_blank">
+            <div class="card mb-12 text-center washerfacts">
+              <div class="row justify-content-md-center">
+                <img src="../img/washerfacts.png" width="80%" />
+              </div>
+              <div class="row">
+                <div class="card-body">
+                  <p><strong>washerfacts.com: </strong> web design for a band</p>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
 

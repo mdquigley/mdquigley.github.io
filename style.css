@@ -61,8 +61,39 @@ footer {
   font-family: inherit;
 }
 
-#portfolio {
+.technology {
   font-family: Arial, sans-serif;
+}
+
+#portfolio .card {
+  padding-top: .25em;
+  height: 320px;
+  box-shadow: 5px 10px 9px rgb(0,0,0,0.2);
+  justify-content: space-between;
+} 
+
+#portfolio .mirror-music {
+  padding-top: 2em;
+}
+
+#portfolio .album a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#portfolio .album a:hover .card {
+  box-shadow: 5px 10px 9px #b57281;
+  color: #555555
+}
+
+#portfolio .washerfacts {
+  padding-top: 2em;
+}
+
+/* this might affect things other than portfolio and /technology */
+.technology h2 {
+  text-align: center;
+  margin-top: 2em;
 }
 
 @media (max-width: 770px) {
