@@ -20,6 +20,10 @@ header {
   margin-top: 20px;
 }
 
+nav ul {
+  list-style-type: none;
+}
+
 a {
   color: #b57281;
 }
@@ -35,8 +39,6 @@ footer {
 #about {
   margin-top: 60px;
 }
-
-#about-img {}
 
 #about-text {
   padding: 50px;
