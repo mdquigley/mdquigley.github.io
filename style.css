@@ -1,5 +1,4 @@
 body {
-  /* font-family: inherit; */
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
@@ -67,7 +66,7 @@ footer {
   box-shadow: 5px 10px 9px rgb(0,0,0,0.2);
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  position: relative;
 } 
 
 #portfolio .mirror-music {
@@ -84,32 +83,31 @@ footer {
   color: #555555;
 }
 
-#portfolio .card-body h5 {
-  transition: 300ms transform ease;
+#portfolio .card p{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 0.7em;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  padding: 5px;
 }
 
-#portfolio .card-body p{
-  opacity: 0;
-  transition: 300ms opacity linear, 300ms transform ease-in-out;
-}
-
-#portfolio .album .card:hover h5,
-#portfolio .album .card:hover p {
-  opacity: 1;
-  transition-delay: 100ms;
-  transform: none;
-}
-
-#portfolio .album .card:hover p {
-  opacity: 1;
-  transition-delay: 100ms;
-  transform: translateY(-50%);
+#portfolio .technology {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 }
 
 .technology h2 {
   text-align: center;
   margin-top: 2em;
 }
+
+@media (max-width: 991px) {
+
+  #portfolio .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 
 @media (max-width: 770px) {
 
@@ -129,6 +127,11 @@ footer {
     margin: 0;
   }
 
+  #portfolio .col-md-4 {
+    flex: inherit;
+    max-width: inherit;
+  }
+
   #portfolio .card {
     padding-top: 1em;
     height:100px;
@@ -138,5 +141,9 @@ footer {
   }
   #portfolio .card-body p{
     opacity: 1;
+    transform: translateY(-50%);
   }
+
+
+
 }
