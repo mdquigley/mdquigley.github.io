@@ -102,6 +102,19 @@ footer {
   margin-top: 2em;
 }
 
+#recent-content div{
+  margin: 20px;
+}
+
+#recent {
+  text-align: center;
+  margin-top: 125px;
+}
+
+#recent-content {
+  justify-content: center;
+  text-align: left !important;
+
 @media (max-width: 991px) {
 
   #portfolio .col-md-4 {
