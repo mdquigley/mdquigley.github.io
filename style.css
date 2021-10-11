@@ -1,5 +1,6 @@
 body {
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
 }
 
 h1 {
@@ -53,7 +54,8 @@ footer {
 }
 
 #portfolio h3 {
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
 }
 
 .technology {
@@ -61,13 +63,13 @@ footer {
 }
 
 #portfolio .card {
-  padding-top: .25em;
+  padding-top: 0.25em;
   height: 320px;
-  box-shadow: 5px 10px 9px rgb(0,0,0,0.2);
+  box-shadow: 5px 10px 9px rgb(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   position: relative;
-} 
+}
 
 #portfolio .mirror-music {
   padding-top: 2em;
@@ -83,13 +85,14 @@ footer {
   color: #555555;
 }
 
-#portfolio .card p{
+#portfolio .card p {
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
   font-size: 0.7em;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
   padding: 5px;
 }
 
@@ -102,7 +105,7 @@ footer {
   margin-top: 2em;
 }
 
-#recent-content div{
+#recent-content div {
   margin: 20px;
 }
 
@@ -114,49 +117,85 @@ footer {
 #recent-content {
   justify-content: center;
   text-align: left !important;
-
+}
 @media (max-width: 991px) {
-
   #portfolio .col-md-4 {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-@media (max-width: 770px) {
+  @media (max-width: 770px) {
+    #about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  #about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    #about-img {
+      padding: 0;
+      margin: 0;
+    }
+
+    #about-text {
+      padding: 50px 0 0 0;
+      margin: 0;
+    }
+
+    #portfolio .col-md-4 {
+      flex: inherit;
+      max-width: inherit;
+    }
+
+    #portfolio .card {
+      padding-top: 1em;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    #portfolio .card h5 {
+      padding-right: 5px;
+    }
+
+    #portfolio .card p {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 60%;
+    }
+
+    #portfolio .card img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      height: 98px;
+      width: auto;
+    }
+    #portfolio .card-body p {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+
+    ul.nav {
+      font-size: 1em;
+      justify-content: space-around !important;
+    }
+    .nav-item {
+      margin: 0 20px 5px 20px;
+      padding: 0;
+      border: 1px black solid;
+      border-radius: 5px;
+    }
+    a.nav-link {
+      padding: 2px 8px;
+    }
+    #site-title {
+      text-align: center;
+    }
+    #portfolio .album h2:first-of-type {
+      margin-top: 0;
+    }
   }
-
-  #about-img {
-    padding: 0;
-    margin: 0;
-  }
-
-  #about-text {
-    padding: 50px 0 0 0;
-    margin: 0;
-  }
-
-  #portfolio .col-md-4 {
-    flex: inherit;
-    max-width: inherit;
-  }
-
-  #portfolio .card {
-    padding-top: 1em;
-    height:100px;
-  }
-  #portfolio .card img {
-    display: none;
-  }
-  #portfolio .card-body p{
-    opacity: 1;
-    transform: translateY(-50%);
-  }
-
-
-
 }
